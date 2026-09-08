@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      (function() {
+        try {
+          const originalFetch = window.fetch;
+          if (originalFetch) {
+            Object.defineProperty(window, 'fetch', {
+              value: originalFetch,
+              writable: true,
+              configurable: true,
+              enumerable: true
+            });
+          }
+        } catch (e) {
+          console.warn("Could not redefine window.fetch:", e);
+        }
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DJ HOTSONG - Professional Latin DJ in Dublin & Belfast</title>
+    <meta name="description" content="Planning an event? DJ Hotsong brings 6+ years of professional open-format experience with smooth, spicy transitions in Reggaeton, Tropical sounds, Dancehall, and House variants to Dublin, Belfast, Cork, Galway, and Limerick." />
+    <meta property="og:title" content="DJ HOTSONG - Professional Latin DJ in Dublin & Belfast" />
+    <meta property="og:description" content="Planning an event? DJ Hotsong brings 6+ years of professional open-format experience with smooth, spicy transitions in Reggaeton, Tropical sounds, Dancehall, and House variants to Dublin, Belfast, Cork, Galway, and Limerick." />
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;family=Sora:wght@100..800&amp;display=swap" rel="stylesheet" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@theme {
+  --color-secondary-fixed-dim: #00dce5;
+  --color-outline-variant: #5d3f38;
+  --color-on-tertiary-fixed: #3f0019;
+  --color-on-secondary-fixed: #002021;
+  --color-surface-container-high: #2a2a2a;
+  --color-background: #131313;
+  --color-tertiary-fixed: #ffd9e0;
+  --color-on-primary: #611200;
+  --color-tertiary: #ffb1c3;
+  --color-surface: #131313;
+  --color-outline: #ae887f;
+  --color-surface-tint: #ffb4a2;
+  --color-on-secondary: #003739;
+  --color-error: #ffb4ab;
+  --color-surface-container: #201f1f;
+  --color-on-primary-container: #550e00;
+  --color-tertiary-fixed-dim: #ffb1c3;
+  --color-surface-container-lowest: #0e0e0e;
+  --color-on-primary-fixed-variant: #891d00;
+  --color-on-tertiary-fixed-variant: #8f0041;
+  --color-surface-container-highest: #353534;
+  --color-primary-container: #ff562b;
+  --color-primary: #ffb4a2;
+  --color-surface-bright: #3a3939;
+  --color-on-error: #690005;
+  --color-on-tertiary-container: #590026;
+  --color-tertiary-container: #ff4b89;
+  --color-secondary-container: #00f4fe;
+  --color-on-tertiary: #66002c;
+  --color-on-error-container: #ffdad6;
+  --color-surface-container-low: #1c1b1b;
+  --color-on-secondary-container: #006c71;
+  --color-inverse-primary: #b42900;
+  --color-inverse-on-surface: #313030;
+  --color-primary-fixed: #ffdad2;
+  --color-on-secondary-fixed-variant: #004f53;
+  --color-on-primary-fixed: #3c0700;
+  --color-on-background: #e5e2e1;
+  --color-surface-dim: #131313;
+  --color-primary-fixed-dim: #ffb4a2;
+  --color-on-surface: #e5e2e1;
+  --color-error-container: #93000a;
+  --color-surface-variant: #353534;
+  --color-secondary-fixed: #63f7ff;
+  --color-on-surface-variant: #e7bdb3;
+  --color-secondary: #e6feff;
+  --color-inverse-surface: #e5e2e1;
+
+  --radius-default: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
+
+  --spacing-margin-mobile: 16px;
+  --spacing-gutter: 24px;
+  --spacing-margin-desktop: 64px;
+  --spacing-unit: 4px;
+  --spacing-stack-sm: 12px;
+  --spacing-stack-md: 24px;
+  --spacing-stack-lg: 48px;
+
+  --font-body-lg: "Hanken Grotesk", sans-serif;
+  --font-label-sm: "Geist", monospace;
+  --font-headline-lg: "Sora", sans-serif;
+  --font-body-md: "Hanken Grotesk", sans-serif;
+  --font-display-lg: "Sora", sans-serif;
+  --font-headline-md: "Sora", sans-serif;
+  --font-headline-lg-mobile: "Sora", sans-serif;
+}
+
+/* Custom animation utility or properties */
+.glow-primary {
+  box-shadow: 0 0 20px rgba(255, 180, 162, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.glow-primary:hover {
+  box-shadow: 0 0 30px rgba(255, 180, 162, 0.4);
+}
+
+.glow-secondary {
+  box-shadow: 0 0 20px rgba(0, 244, 254, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.glow-secondary:hover {
+  box-shadow: 0 0 30px rgba(0, 244, 254, 0.4);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  background-color: var(--color-surface-container-high);
+  transform: translateY(-4px);
+}
+
+.image-hover img {
+  transition: transform 0.5s ease;
+}
+
+.image-hover:hover img {
+  transform: scale(1.05);
+}

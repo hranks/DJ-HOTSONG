@@ -1,0 +1,6 @@
+{
+  "name": "DJ Hotsong",
+  "description": "Professional Latin DJ based in Dublin & Belfast with 6+ years of open-format experience across major cities (Cork, Galway, Limerick). Dynamic interactive audio player, custom booking request system, and bento-grid event gallery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
